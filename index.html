@@ -14,12 +14,21 @@
     <header>
       <div class="brand">reed<span>.</span>deer</div>
       <nav>
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#wip">wip</a>
-        <a href="#interests">interests</a>
-        <a href="#contact">contact</a>
+        <a href="index.html" class="active">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="wip.html">wip</a>
+        <a href="interests.html">interests</a>
+        <a href="links.html">links</a>
       </nav>
+      <a class="resume-link mono" href="resume.pdf" target="_blank" rel="noopener" aria-label="resume">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+        </svg>
+        resume
+      </a>
     </header>
 
     <div class="hero">
@@ -106,12 +115,14 @@
       <div class="view-all"><a href="projects.html">view all projects →</a></div>
     </section>
 
-    <!-- ===== WIP -->
+    <!-- ===== WIP preview -->
     <section id="wip">
-      <div class="section-head">
-        <h2>currently i am</h2>
-        <span class="count mono">03</span>
-      </div>
+      <a class="section-link" href="wip.html">
+        <div class="section-head">
+          <h2>currently i am</h2>
+          <span class="count mono">read more →</span>
+        </div>
+      </a>
       <div class="wip-list">
         <div class="wip-row">
           <div class="dot"></div>
@@ -129,29 +140,13 @@
           </div>
           <div class="wip-meta">research</div>
         </div>
-        <div class="wip-row">
-          <div class="dot"></div>
-          <div>
-            <div class="wip-title">building an adaptive chess coach </div>
-            <div class="wip-note">instead of studying openings i have decided to go the harder route and create a chess
-              coach catered to me</div>
-          </div>
-          <div class="wip-meta">projects</div>
-        </div>
-        <div class="wip-row">
-          <div class="dot"></div>
-          <div>
-            <div class="wip-title">learning to play the piano</div>
-            <div class="wip-note">i want to play fur elise</div>
-          </div>
-          <div class="wip-meta">music</div>
-        </div>
       </div>
+      <div class="view-all"><a href="wip.html">view all →</a></div>
     </section>
 
-    <!-- ===== Interests -->
+    <!-- ===== Interests preview -->
     <section id="interests">
-      <a class="section-link" href="about.html#interests">
+      <a class="section-link" href="interests.html">
         <div class="section-head">
           <h2>interests(i have a lot)</h2>
           <span class="count mono">read more →</span>
@@ -173,22 +168,8 @@
           <h4>photography</h4>
           <p>i like taking pictures</p>
         </div>
-        <div class="interest">
-          <div class="num mono">iv</div>
-          <h4>music</h4>
-          <p>i play the drums and piano</p>
-        </div>
-        <div class="interest">
-          <div class="num mono">v</div>
-          <h4>art</h4>
-          <p>...</p>
-        </div>
-        <div class="interest">
-          <div class="num mono">vi</div>
-          <h4>Philosophy</h4>
-          <p>i think therfore i am (i think?)</p>
-        </div>
       </div>
+      <div class="view-all"><a href="interests.html">view all →</a></div>
     </section>
 
     <footer id="contact">
@@ -197,6 +178,7 @@
         <a href="#">email</a>
         <a href="#">github</a>
         <a href="#">linkedin</a>
+        <a href="links.html">all links →</a>
       </div>
     </footer>
 

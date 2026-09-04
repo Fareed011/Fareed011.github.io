@@ -173,6 +173,40 @@ footer .mono{ font-size:12px; color:var(--muted); }
 .inline-link{ display:inline-block; margin-top:16px; font-size:12.5px; border-bottom:1px solid var(--line); }
 .inline-link:hover{ color:var(--accent); border-color:var(--accent); }
 
+/* ===== Resume icon link ===== */
+.resume-link{
+  display:flex; align-items:center; gap:6px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:13px; color:var(--muted);
+  border-bottom:1px solid transparent;
+  transition:color .15s ease, border-color .15s ease;
+}
+.resume-link:hover{ color:var(--ink); border-color:var(--ink); }
+.resume-link svg{ width:15px; height:15px; flex-shrink:0; }
+
+/* ===== Roles (in-depth) ===== */
+.role{ display:flex; flex-direction:column; gap:8px; padding:16px 0; border-bottom:1px solid var(--line-soft); font-size:13.5px; }
+.role:first-child{ padding-top:0; }
+.role:last-child{ border-bottom:none; }
+.role-top{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
+.role-desc{ font-size:13px; color:#333; line-height:1.55; }
+
+/* ===== Homepage teaser text (wip / interests summaries) ===== */
+.teaser-text{ padding:0 32px 22px; font-size:14px; color:#333; max-width:60ch; }
+
+/* ===== Links page ===== */
+.links-grid{ display:flex; flex-wrap:wrap; }
+.link-card{
+  flex:1 1 220px; padding:28px 24px;
+  border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px;
+  transition:background .15s ease;
+}
+.links-grid .link-card:last-child{ border-right:none; }
+.link-card:hover{ background:var(--panel); }
+.link-label{ font-size:12px; color:var(--muted); }
+.link-value{ font-size:15px; font-weight:500; }
+
 @media (max-width:760px){
   .hero{ grid-template-columns:1fr; }
   .hero-main{ border-right:none; border-bottom:1px solid var(--line); }
